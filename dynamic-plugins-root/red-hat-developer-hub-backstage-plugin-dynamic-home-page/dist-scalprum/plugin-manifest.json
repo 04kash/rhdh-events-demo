@@ -1,0 +1,11 @@
+{
+  "name": "red-hat-developer-hub.backstage-plugin-dynamic-home-page",
+  "version": "1.5.3",
+  "extensions": [],
+  "registrationMethod": "callback",
+  "baseURL": "auto",
+  "loadScripts": [
+    "red-hat-developer-hub.backstage-plugin-dynamic-home-page.7fc3d2c3d9ca51308059.js"
+  ],
+  "buildHash": "7fc3d2c3d9ca5130805909fd74a8471f"
+}

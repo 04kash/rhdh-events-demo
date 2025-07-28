@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkred_hat_developer_hub_backstage_plugin_dynamic_home_page=self.webpackChunkred_hat_developer_hub_backstage_plugin_dynamic_home_page||[]).push([[1598],{61598:(e,a,_)=>{_.r(a),_.d(a,{FeaturedDocsCard:()=>u});var r=_(31085),s=_(31824);const u=e=>(0,r.jsx)(s.mB,{subLinkText:" Learn more",...e})}}]);
+//# sourceMappingURL=1598.570e7a55.chunk.js.map

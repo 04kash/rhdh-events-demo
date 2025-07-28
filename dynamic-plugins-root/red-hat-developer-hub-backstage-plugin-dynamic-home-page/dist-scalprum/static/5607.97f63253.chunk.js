@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkred_hat_developer_hub_backstage_plugin_dynamic_home_page=self.webpackChunkred_hat_developer_hub_backstage_plugin_dynamic_home_page||[]).push([[5607],{5607:(e,t,s)=>{s.r(t),s.d(t,{WorldClock:()=>_});var a=s(31085),o=s(31824);const _=({worldClocks:e,timeFormat:t,justifyContent:s="space-between"})=>(0,a.jsx)("div",{style:{display:"flex",justifyContent:s},children:(0,a.jsx)(o.E0,{clockConfigs:e,customTimeFormat:t})})}}]);
+//# sourceMappingURL=5607.97f63253.chunk.js.map

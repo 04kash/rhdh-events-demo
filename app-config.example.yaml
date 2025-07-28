@@ -1,6 +1,6 @@
 app:
   title: Red Hat Developer Hub
-  baseUrl: http://localhost:7007
+  baseUrl: http://localhost:3000
 organization:
   name: My Org
 backend:
@@ -13,6 +13,7 @@ backend:
       - 'http:'
       - 'https:'
   cors:
+    origin: http://localhost:3000
     methods: [GET, HEAD, PATCH, POST, PUT, DELETE]
     credentials: true
   database:
@@ -29,6 +30,8 @@ techdocs:
   builder: external
 auth:
   environment: development
+  providers:
+    guest: {}
 catalog:
   import:
     entityFilename: catalog-info.yaml
@@ -39,3 +42,23 @@ catalog:
     # Note: integrations.github[].apps must be correctly configured to read GitHub locations
     - type: file
       target: ../../catalog-entities/all.yaml
+  providers:
+    keycloakOrg:
+      default:
+        baseUrl: http://localhost:8080/
+        loginRealm: demo-rhdh-events
+        realm: demo-rhdh-events
+        clientId: rhdh-events-webhook
+        clientSecret: ${CLIENT_SECRET}
+        schedule:
+          frequency:
+            hours: 1
+          timeout:
+            minutes: 30
+          initialDelay:
+            seconds: 7
+events:
+  http:
+    topics:
+      - keycloak
+
